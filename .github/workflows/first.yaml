@@ -10,7 +10,7 @@ jobs:
       - uses: mr-smithers-excellent/docker-build-push@v4
         name: Build & push Docker image
         with:
-          image: ronalraj/first-repo
+          image: ronalraj/first-repo:v3
           registry: docker.io
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
